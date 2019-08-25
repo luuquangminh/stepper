@@ -15,7 +15,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <div>
-        <Stepper actual={1} steppers={['step1', 'step2', 'step3','step4','step5']} validIcon="fa fa-check" isVertical={stepType}/>
+        <Stepper current={1} steppers={['step1', 'step2', 'step3','step4','step5']} validIcon="fa fa-check" isVertical={stepType}/>
       </div>
       </header>
     </div>

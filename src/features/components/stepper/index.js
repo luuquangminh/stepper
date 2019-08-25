@@ -4,7 +4,6 @@ import "./style.scss"
 import {isEmpty} from "lodash"
 
 const Stepper = (props) =>{
-    console.log("props",props)
     const [count,setCount] = useState(0)
     let bubbleMax = props.steppers.length
     const isVertical = props.isVertical;
@@ -22,7 +21,7 @@ const Stepper = (props) =>{
                      onClick={()=> setCount(index)}
                      >
                     <div className="horizon-stepper">
-                    <span className="bubble">{props.actual > i ? <i className="fa fa-check"></i> : <span>{index+1}</span>}</span>
+                    <span className="bubble">{props.current > i ? <i className="fa fa-check"></i> : <span>{index+1}</span>}</span>
                      <span className="title">{item}</span>
                     </div>
                      {(i + 1) === bubbleMax ? '' :
